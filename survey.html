@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Melsoft Survey</title>
+  </head>
+  <body>
+    <h1 align="center">Melsoft Survey</h1>
+
+    <!-- Form elements-->
+    <form method="post">
+      <fieldset>
+        <label for="legend">Add user</label>
+        <br />
+        <legend></legend>
+        <br />
+
+        <label for="firstName"><strong>First Name</strong></label>
+        <input type="text" name="userFirstName" id="firstName" autofocus />
+
+        <br />
+        <br />
+
+        <label for="lastName"><strong>Last Name</strong></label>
+        <input type="text" name="userLastName" id="lastName" />
+
+        <br />
+        <br />
+
+        <label for="email"><strong>Email Address</strong> </label>
+        <input type="text" name="userEmail" id="email" />
+
+        <br />
+        <br />
+
+        <label for="userStatus">Status</label>
+        <select name="status" id="statusSelect">
+          <option value="">--Please Choose an option--</option>
+          <option value="">Student</option>
+          <option value="">Instructor</option>
+          <option value="">Guest</option>
+        </select>
+
+        <br />
+        <p>Choose your favorite programming language:</p>
+
+        <input type="radio" name="html" id="html-option" />
+        <label for="html">HTML</label>
+        <br />
+
+        <input type="radio" name="css" id="css-option" />
+        <label for="html">CSS</label>
+        <br />
+
+        <input type="radio" name="javascript" id="js-option" />
+        <label for="html">JavaScript</label>
+        <br />
+
+        <p>Comments (Optional)</p>
+        <textarea
+          name="additional-comments"
+          id="comment-section"
+          cols="40"
+          rows="6"
+          placeholder="Add comment here..."
+        ></textarea>
+
+        <br />
+        <label for="date">Current date</label>
+        <input type="date" name="date" id="todaysDate" />
+        <br />
+        <br />
+
+        <input type="checkbox" name="" id="" />
+        <label for="newsletter">Sign up for newsletter</label>
+
+        <br />
+
+        <input type="checkbox" name="" id="" />
+        <label for="newsletter">Agree to terms & conditions</label>
+
+        <br />
+        <br />
+
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
